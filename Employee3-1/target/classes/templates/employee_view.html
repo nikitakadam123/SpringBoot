@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Employee View</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="description" content="" />
+  <link rel="icon" href="favicon.png">
+</head>
+<body>
+  <h2>Employee Details</h2>
+  <p>Employee Id: <span th:text="${employee.empId}"></span></p>
+  <p>Employee Name: <span th:text="${employee.empName}"></span></p>
+  <p>Employee Salary: <span th:text="${employee.empSal}"></span></p>
+  <a href="/emp">Back to Employee List</a>
+</body>
+</html>

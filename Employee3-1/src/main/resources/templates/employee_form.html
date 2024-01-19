@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Employee Form</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+	   <h2>Employee Form</h2>
+	    <form th:action="@{/emp/save}" th:object="${employee}" method="POST">
+	    
+	    <input type="hidden" th:field="*{empId}">
+	    
+	    <label>Name: <input type="text" th:field="*{empName}" required></label><br>
+	    
+	    <label>Salary: <input type="text" th:field="*{empSal}" required></label><br>
+	    
+	    <button type="submit">Save</button>
+	    </form>
+  
+  
+     <a href="/emp">Cancel</a>
+  </body>
+</html>
